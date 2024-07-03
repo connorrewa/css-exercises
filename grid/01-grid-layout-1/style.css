@@ -9,6 +9,18 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 31% 31% 33%;
+  grid-template-rows: auto;
+  /* grid-template-areas:
+    "header header header"
+    "sidebar nav nav"
+    "sidebar article article"
+    "sidebar article article"
+    "sidebar article article"
+    "sidebar article article"
+    "footer footer footer"; */
+    gap: 20px;
 }
 
 .container div {
@@ -22,22 +34,31 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: 1 / 4;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5
 }
 
 .nav {
   background-color: #642cde;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
 }
 
 .article p {

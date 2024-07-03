@@ -1,0 +1,22 @@
+.odd {
+
+    background-color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, DejaVu Sans;
+}
+
+#second {
+    color: lightblue;
+    font-size: 36px;
+
+}
+
+#third {
+    font-size: 24px;
+
+}
+
+#fourth {
+    background-color: lightgreen;
+    font-size:  24px;
+    text-emphasis: bold;
+}
